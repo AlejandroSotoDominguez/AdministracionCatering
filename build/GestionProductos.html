@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>GestionProductos module &#8212; documentación de Catering - 1.0</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="InformeClientes module" href="InformeClientes.html" />
+    <link rel="prev" title="GestionClientes module" href="GestionClientes.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-GestionProductos">
+<span id="gestionproductos-module"></span><h1>GestionProductos module<a class="headerlink" href="#module-GestionProductos" title="Enlazar permanentemente con este título">¶</a></h1>
+<dl class="class">
+<dt id="GestionProductos.FiestraPrincipal">
+<em class="property">class </em><code class="descclassname">GestionProductos.</code><code class="descname">FiestraPrincipal</code><a class="headerlink" href="#GestionProductos.FiestraPrincipal" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">gi.overrides.Gtk.Window</span></code></p>
+<dl class="method">
+<dt id="GestionProductos.FiestraPrincipal.categoria_filtro">
+<code class="descname">categoria_filtro</code><span class="sig-paren">(</span><em>modelo</em>, <em>punteiro</em>, <em>datos</em><span class="sig-paren">)</span><a class="headerlink" href="#GestionProductos.FiestraPrincipal.categoria_filtro" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GestionProductos.FiestraPrincipal.on_btnBorrar_clicked">
+<code class="descname">on_btnBorrar_clicked</code><span class="sig-paren">(</span><em>punteiro</em>, <em>modelo</em><span class="sig-paren">)</span><a class="headerlink" href="#GestionProductos.FiestraPrincipal.on_btnBorrar_clicked" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Función que permite borrar una fila
+:param punteiro: campo seleccionado
+:param modelo: modelo de la tabla
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GestionProductos.FiestraPrincipal.on_btnEngadir_clicked">
+<code class="descname">on_btnEngadir_clicked</code><span class="sig-paren">(</span><em>punteiro</em>, <em>modelo</em><span class="sig-paren">)</span><a class="headerlink" href="#GestionProductos.FiestraPrincipal.on_btnEngadir_clicked" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Función que inserta los datos en la base de datos
+:param punteiro
+:param modelo de la tabla</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GestionProductos.FiestraPrincipal.on_btnLimpiar_clicked">
+<code class="descname">on_btnLimpiar_clicked</code><span class="sig-paren">(</span><em>punteiro</em>, <em>modelo</em><span class="sig-paren">)</span><a class="headerlink" href="#GestionProductos.FiestraPrincipal.on_btnLimpiar_clicked" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Función que borra el contenido de los campos de texto
+:param punteiro:
+:param modelo:
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GestionProductos.FiestraPrincipal.on_btnModificar_clicked">
+<code class="descname">on_btnModificar_clicked</code><span class="sig-paren">(</span><em>punteiro</em>, <em>modelo</em><span class="sig-paren">)</span><a class="headerlink" href="#GestionProductos.FiestraPrincipal.on_btnModificar_clicked" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Función que actualiza los datos en el treeview y en la base de datos
+:param punteiro:
+:param modelo: modelo de la tabla
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GestionProductos.FiestraPrincipal.on_celdaText_edited">
+<code class="descname">on_celdaText_edited</code><span class="sig-paren">(</span><em>control</em>, <em>punteiro</em>, <em>texto</em>, <em>modelo</em><span class="sig-paren">)</span><a class="headerlink" href="#GestionProductos.FiestraPrincipal.on_celdaText_edited" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GestionProductos.FiestraPrincipal.on_seleccion_changed">
+<code class="descname">on_seleccion_changed</code><span class="sig-paren">(</span><em>seleccion</em><span class="sig-paren">)</span><a class="headerlink" href="#GestionProductos.FiestraPrincipal.on_seleccion_changed" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Función que añade los registros de la base de datos al treeview
+:param seleccion: campo seleccionado</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">Proyecto</a><ul>
+      <li>Previous: <a href="GestionClientes.html" title="capítulo anterior">GestionClientes module</a></li>
+      <li>Next: <a href="InformeClientes.html" title="próximo capítulo">InformeClientes module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>Esta página</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/GestionProductos.rst.txt"
+            rel="nofollow">Mostrar el código</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Búsqueda rápida</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Ir a" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Alejandro Soto.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/GestionProductos.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
